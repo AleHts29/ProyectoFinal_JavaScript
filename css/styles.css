@@ -1,0 +1,96 @@
+#cargando {
+    display: none;
+}
+
+body{
+    color: #333;
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.509);
+    margin-top: 50px;
+}
+
+
+form{
+    width: 80%;
+    background: rgb(39, 54, 67);
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+input{
+    display: block;
+    width: 90%;
+    padding: 9px;
+    margin: 10px auto;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 2px solid grey;
+    background: transparent;
+    outline: none;
+    transition: background 0.6s ;
+    color: aliceblue;
+    /* box-sizing: border-box; */
+}
+input::placeholder{
+    color: rgba(184, 184, 184, 0.756);
+    transition: color 0.6s ;
+}
+input:hover{
+    background: rgba(80, 80, 255, 0.584);
+}
+input:hover::placeholder{
+    color: rgb(241, 241, 255);
+}
+
+
+input[type = "submit"]{
+    width: 50%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(80, 80, 255);
+    color: aliceblue;
+}
+input[type = "submit"]:hover{
+    background: rgb(50, 50, 140);
+}
+
+h2{
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+.green{
+    color: rgb(69, 148, 81)
+}
+.red{
+    color: rgb(211, 62, 62);
+}
+
+
+.error{
+    background: red;
+    display: none;
+}
+.pricing-header{
+    font-family: sans-serif;
+    color: #F9E79F;
+    display: none;
+}
+
+#lista-productos{
+    display: none;
+}
+
+.faIn-JQ{
+    display: none;
+}
+
+
+.fadeTks-JQ{
+    font-family: sans-serif;
+    color: #F9E79F;
+    display: none;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}

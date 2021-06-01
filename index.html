@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>2da Entrega Proyecto Final</title>
+
+</head>
+
+<body>
+
+    <header></header>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="#">HTS - Production Live</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <i src="#" class="nav-link dropdown-toggle img-fluid fas fa-cart-arrow-down" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <!-- <a href="#">
+                                        <i class="fab fa-youtube" ></i>
+                                    </a> -->
+                                </i>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-outline-info btn-block">Vaciar Carrito</a>
+                                    <a href="" id="procesar-pedido" class="btn btn-outline-success btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+           
+                <h1 class="display-4 mt-4">Welcome to HTs Production</h1>
+                <p class="lead">Selecciona dos de nuestros productos y accede a un descuento</p>
+          
+        </div>
+
+        
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ABLETON</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/ABLETON.png" class="card-img-top">
+                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">20.30</span>$</h6>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Ableton session view</li>
+                            <li>4 Hours Mastercalss</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">DEEP HOUSE</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/DEEP.png" class="card-img-top">
+                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">15.00</span>$</h6>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Deep House Premium</li>
+                            <li>Drum Sample Pack</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">GROOVE</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/GROOVE.png" class="card-img-top">
+                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">17.50</span>$</h6>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Groove & Rhythm</li>
+                            <li>3 Hours os Training</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">TECHNO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/INTERSTELLAR.png" class="card-img-top">
+                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">25.10</span>$</h6>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Interstellar Techno</li>
+                            <li>Full Ableton Template</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MIXING</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/MIXING.png" class="card-img-top">
+                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">49.99</span>$</h6>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Mixing - Start to finish</li>
+                            <li>6 Hours advanced course</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ORGANIC</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/ORGANIC.png" class="card-img-top">
+                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">17.50</span>$</h6>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Woodlands - Organic House</li>
+                            <li>Sample Pack</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <section>
+        <div class="container infoFooter">
+        
+        </div>
+    </section>
+
+
+<footer></footer>
+    
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+    
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+    <script src="js/eventos.js"></script>
+    <script src="js/app.js"></script>
+    
+    
+
+</body>
+
+</html>

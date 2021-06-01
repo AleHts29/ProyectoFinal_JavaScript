@@ -1,0 +1,23 @@
+[
+    {
+      "albumId": 1,
+      "id": 1,
+      "title": "Percussive Afro House - Full Ableton Production Suite",
+      "desciption": "Fully Produced Tracks as Ableton Projects, 30 Ableton Instruments, sample pack of 150 one hits, 60+ MIDI files, and 140+ Loops + More!",
+      "price": 12.99
+    },
+    {
+      "albumId": 1,
+      "id": 2,
+      "title": "Arrangement Course",
+      "desciption": "Practical lessons, tips, and tricks, to take your ideas from a loop to a fully produced song.",
+      "price": 7.25
+    },
+    {
+      "albumId": 1,
+      "id": 3,
+      "title": "How to Write Melodies",
+      "desciption": "Do you have problems writing catchy Melodies? Then this Step by Step guide is for you!",
+      "price": 8.59
+    }
+]
