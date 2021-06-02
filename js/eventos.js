@@ -3,13 +3,14 @@
 
 // Intro - bienvenida
 let welcome = $(".pricing-header");
-welcome.show(1500);
+welcome.show(3000);
 
 // Carts
-$("#lista-productos").fadeIn(600);
-$("#lista-productos").delay(200).fadeOut(1500, function(){
-    $("#lista-productos").fadeIn(1000);
-    $("body").fadeIn(1000).css("background-color", "#F9E79F");
+$("#lista-productos").fadeIn(1600);
+$("#lista-productos").delay(1250).fadeIn(100, function(){
+    // $("#lista-productos").
+    
+    $("body").fadeIn(1000).css("background-color", "#c1d7d7");
     welcome.fadeIn(1000).css("color","#566573");
 });
 
