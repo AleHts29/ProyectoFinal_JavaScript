@@ -34,32 +34,40 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <i src="#" class="nav-link dropdown-toggle img-fluid fas fa-cart-arrow-down" height="70px"
-                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <!-- <a href="#">
-                                        <i class="fab fa-youtube" ></i>
-                                    </a> -->
-                                </i>
-                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                                    <table id="lista-carrito" class="table">
+                        <li class="nav-item dropdown">
+                            <i src="#" class="nav-link dropdown-toggle img-fluid fas fa-cart-arrow-down" height="70px"
+                                width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <!-- <a href="#">
+                                    <i class="fab fa-youtube" ></i>
+                                </a> -->
+                            </i>
+                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                                                    
+                                <div class="container">
+                                    <!-- <div class="row" id="cards">
+                                    </div> -->
+                            
+                                    <table class="table m-4">
                                         <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th></th>
+                                            <tr class="col">
+                                                <th scope="col">#</th>
+                                                <th scope="col">Item</th>
+                                                <th scope="col ">Cantidad</th>
+                                                <th scope="col">Total</th>
+                                                <!-- <th scope="col"></th> -->
                                             </tr>
                                         </thead>
-                                        <tbody></tbody>
+                                        <tbody id="items"></tbody>
+                                        <tfoot>
+                                            <tr id="footer">
+                                                <th scope="row" colspan="5"> Carrito vacio - llenar</th>
+                                            </tr>
+                                        </tfoot>
                                     </table>
-
-                                    <a href="#" id="vaciar-carrito" class="btn btn-outline-info btn-block">Vaciar Carrito</a>
-                                    <a href="" id="procesar-pedido" class="btn btn-outline-success btn-block">Procesar
-                                        Compra</a>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
                         </ul>
                     </div>
                 </nav>
@@ -68,14 +76,13 @@
     </header>
 
     <main>
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
-           
-                <h1 class="display-4 mt-4">Welcome to HTs Production</h1>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">  
+                <h1 class="display-4 mt-4">HTs Production</h1>
                 <p class="lead">Selecciona dos de nuestros productos y accede a un descuento</p>
-          
         </div>
 
-        
+<!-- Cards estaticas -->
+<!--         
         <div class="container" id="lista-productos">
             
             <div class="card-deck mb-3 text-center">
@@ -187,18 +194,65 @@
                 </div>
                 
             </div>
-        </div>
+        </div> -->
 
+        <!-- Cards dinamicas -->
+        <div class="container" id="lista-productos">
+            <div class="row" id="cards">
+            </div>
+        </div>
     </main>
 
-    <section>
-        <div class="container infoFooter">
-        
+    
+
+
+    <!-- Cards TEMPLATE-->
+    <template id="template-card">
+        <div class="col-12 mb-3 col-md-4">
+            <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5>Titulo</h5>
+                    <div>
+                        <span>$ <p style="display:inline-block">500</p></span>
+                    </div>
+                    <button class="btn btn-outline-dark">Comprar</button>
+                </div>
+            </div>
         </div>
-    </section>
+    </template>
+
+    <!-- Templeate Footer -->
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+        <div class="col">
+            <a href="#" id="vaciar-carrito2" class="btn btn-outline-info btn-block m-4">Vaciar Carrito</a>
+            <a href="" id="procesar-pedido" class="btn btn-outline-success btn-block m-4">Pagar</a>
+        </div>
+    </template>
+
+    <!-- Templeate carrito -->
+    <template id="template-carrito">
+        <tr>
+            <th scope="row">id</th>
+            <td class="col-sm-12">Cafe</td>
+            <td>1</td>
+            <td>$<span>500</span></td>
+            <td>
+                <button class="btn btn-warning btn-up btn-sm ml-5">
+                    +
+                </button>
+                <button class="btn btn-warning btn-down btn-sm ml-1">
+                    -
+                </button>
+            </td>
+        </tr>
+    </template>
 
 
-<footer></footer>
+<footer ></footer>
     
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -210,12 +264,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 
     
-    <script src="js/sweetalert2.min.js"></script>
-    <script src="js/carrito.js"></script>
-    <script src="js/pedido.js"></script>
+     <script src="js/sweetalert2.min.js"></script>
+    <!-- <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script> -->
     <script src="js/eventos.js"></script>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
     
+    <!-- <script src="js/app2.js"></script>  -->
+    
+    <script src="js/carrito.js"></script>
+    <script src="js/app.js"></script>
     
 
 </body>

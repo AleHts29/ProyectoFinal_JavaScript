@@ -1,21 +1,68 @@
- // DATOS TRAIDOS DE UN JSON LOCAL
-const DataJSON = "./data/data2.json"
+// import {} from "./carrito3.js";
 
-$("section").prepend('<button class="container  ml-5" id = "btn2"> Leo datos JSON usando AJAX </button> <br><br>');
+// const carro = new Carrito ();
 
- $("#btn2").click( () => {
-     $.getJSON(DataJSON, (res, status) =>{
-        console.log("Status request is: " + status);
-        console.dir(res);
+const cards = document.getElementById('cards');
+const items = document.getElementById('items');
+const footer = document.getElementById('footer');
+// const procesarPedidoBtn = $('#procesar-pedido');
 
-        for (const symbol of res){
-            $(".infoFooter").prepend(`<div>
-                             <h3> Curso: <strong>${symbol.title}</strong></h3>
-                             <h5>${symbol.desciption}</h5>
-                             <p>Precio: USD ${symbol.price}$ </p>
-                             </div>`);
-            
-        }
+const templateCard = document.getElementById('template-card').content;
+const templateFooter = document.getElementById('template-footer').content;
+const templateCarrito = document.getElementById('template-carrito').content;
+const dataFragment = document.createDocumentFragment();
 
-     });
- });
+// Almacena los objetos selecionados
+let carrito2 = {}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    fetchData();
+
+    // Local storage
+    if(localStorage.getItem('carrito')){
+        carrito2 = JSON.parse(localStorage.getItem('carrito'));
+        pintarCarrito();
+    }
+})
+
+//Event agregar al carrito
+cards.addEventListener('click', e => {
+    addCarrito(e);
+})
+
+
+
+// Evento botones aumentar/disminuor cantidad de productos
+items.addEventListener('click', e => {
+    btnProducts(e);
+})
+
+
+
+
+
+// cargarEventos();
+
+// // LLamada a los diferentes eventos
+// function cargarEventos(){
+//     productos.click((e)=>{carro.comprarProducto(e)});
+//     carrito.click((e)=>{carro.eliminarProducto(e)});
+//     vaciarCarritoBtn.click( (e) => {carro.vaciarCarrito(e)});
+//     $(document).ready(carro.leerLocalStorage());
+//     procesarPedidoBtn.click( (e)=>{carro.procesarPedido(e)});
+
+
+
+//     //Event agregar al carrito
+//     cards.addEventListener('click', e => {
+//         addCarrito(e);
+//     })
+
+//     // Evento botones aumentar/disminuor cantidad de productos
+//     items.addEventListener('click', e => {
+//         btnProducts(e);
+//     })
+
+// }
+
+
