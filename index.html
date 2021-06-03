@@ -82,121 +82,6 @@
                 <p class="lead">Selecciona dos de nuestros productos y accede a un descuento</p>
         </div>
 
-<!-- Cards estaticas -->
-<!--         
-        <div class="container" id="lista-productos">
-            
-            <div class="card-deck mb-3 text-center">
-                
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-bold">ABLETON</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/ABLETON.png" class="card-img-top">
-                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">20.30</span>$</h6>
-
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li></li>
-                            <li>Ableton session view</li>
-                            <li>4 Hours Mastercalss</li>
-                        </ul>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-bold">DEEP HOUSE</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/DEEP.png" class="card-img-top">
-                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">15.00</span>$</h6>
-
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li></li>
-                            <li>Deep House Premium</li>
-                            <li>Drum Sample Pack</li>
-                        </ul>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-bold">GROOVE</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/GROOVE.png" class="card-img-top">
-                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">17.50</span>$</h6>
-
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li></li>
-                            <li>Groove & Rhythm</li>
-                            <li>3 Hours os Training</li>
-                        </ul>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-deck mb-3 text-center">
-                
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-bold">TECHNO</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/INTERSTELLAR.png" class="card-img-top">
-                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">25.10</span>$</h6>
-
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li></li>
-                            <li>Interstellar Techno</li>
-                            <li>Full Ableton Template</li>
-                        </ul>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-bold">MIXING</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/MIXING.png" class="card-img-top">
-                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">49.99</span>$</h6>
-
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li></li>
-                            <li>Mixing - Start to finish</li>
-                            <li>6 Hours advanced course</li>
-                        </ul>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-bold">ORGANIC</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/ORGANIC.png" class="card-img-top">
-                        <h6 class="card-title my-3 pricing-card-title precio"> USD: <span class="">17.50</span>$</h6>
-
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li></li>
-                            <li>Woodlands - Organic House</li>
-                            <li>Sample Pack</li>
-                        </ul>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
-                    </div>
-                </div>
-                
-            </div>
-        </div> -->
-
         <!-- Cards dinamicas -->
         <div class="container" id="lista-productos">
             <div class="row" id="cards">
@@ -210,19 +95,20 @@
     <!-- Cards TEMPLATE-->
     <template id="template-card">
         <div class="col-12 mb-3 col-md-4">
-            <div class="card">
-                <img src="" alt="" class="card-img-top">
+            <div class="card pb-4">
+                <div><img src="" alt="" class="card-img-top"></div>
                 <div class="card-body">
                     <h5>Titulo</h5>
-                    <div>
-                        <span>$ <p style="display:inline-block">500</p></span>
+                    <div class="priceCard">
+                        <span>$ <p>500</p></span>
                     </div>
-                    <button class="btn btn-outline-dark">Comprar</button>
+                    
                 </div>
+                <button class="btn btn-outline-dark btnCards">Comprar</button>
             </div>
         </div>
     </template>
-
+    
     <!-- Templeate Footer -->
     <template id="template-footer">
         <th scope="row" colspan="2">Total productos</th>
