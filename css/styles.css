@@ -122,11 +122,11 @@ span p{
 }
 .priceCard {
     color: green;
+    text-align: center;
 }
 
 
 .btnCards{
-    /* text-align: center !important; */
     margin: 0 auto;
     margin-top: auto;
 
