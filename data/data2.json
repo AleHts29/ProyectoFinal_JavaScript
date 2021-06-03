@@ -1,26 +1,50 @@
 [
-    {
-      "albumId": 1,
-      "id": 1,
-      "image":"./img/ABLETON.png",
-      "title": "Percussive Afro House - Full Ableton Production Suite",
-      "desciption": "Fully Produced Tracks as Ableton Projects, 30 Ableton Instruments, sample pack of 150 one hits, 60+ MIDI files, and 140+ Loops + More!",
-      "price": 12.99
-    },
-    {
-      "albumId": 1,
-      "id": 2,
-      "image":"./img/DEEP.png",
-      "title": "Arrangement Course",
-      "desciption": "Practical lessons, tips, and tricks, to take your ideas from a loop to a fully produced song.",
-      "price": 7.25
-    },
-    {
-      "albumId": 1,
-      "id": 3,
-      "image":"./img/INTERSTELLAR.png",
-      "title": "How to Write Melodies",
-      "desciption": "Do you have problems writing catchy Melodies? Then this Step by Step guide is for you!",
-      "price": 8.59
-    }
+  {
+    "albumId": 1,
+    "id": 1,
+    "image":"./img/ABLETON.png",
+    "title": "Percussive Afro House - Full Ableton Production Suite",
+    "desciption": "Fully Produced Tracks as Ableton Projects, 30 Ableton Instruments, sample pack of 150 one hits, 60+ MIDI files, and 140+ Loops + More!",
+    "price": 12.99
+  },
+  {
+    "albumId": 1,
+    "id": 2,
+    "image":"./img/DEEP.png",
+    "title": "Arrangement Course",
+    "desciption": "Practical lessons, tips, and tricks, to take your ideas from a loop to a fully produced song.",
+    "price": 7.25
+  },
+  {
+    "albumId": 1,
+    "id": 3,
+    "image":"./img/INTERSTELLAR.png",
+    "title": "How to Write Melodies",
+    "desciption": "Do you have problems writing catchy Melodies? Then this Step by Step guide is for you!",
+    "price": 8.59
+  },
+  {
+    "albumId": 1,
+    "id": 4,
+    "image":"./img/ORGANIC.png",
+    "title": "Woodlands - Organic House",
+    "desciption": "FStunning Organic Sounds About Woodlands Vol.1 // organic house Add some real organic crunch into your productions, full of life,...",
+    "price": 25.00
+  },
+  {
+    "albumId": 1,
+    "id": 5,
+    "image":"./img/MIXING.png",
+    "title": "ACourse: Mixing A Track from Start To Finish",
+    "desciption": "Learn the Complete Mixing Process About this Course In this 5+ Hour Mixing Course we'll show you the complete mixing...",
+    "price": 29.90
+  },
+  {
+    "albumId": 1,
+    "id": 6,
+    "image":"./img/GROOVE.png",
+    "title": "Groove Course",
+    "desciption": "Make Your Drums Sound Professional About this Course This course is entirely dedicated to building professional sounding drum loops for...",
+    "price": 27.00
+  }
 ]

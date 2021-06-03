@@ -36,33 +36,3 @@ cards.addEventListener('click', e => {
 items.addEventListener('click', e => {
     btnProducts(e);
 })
-
-
-
-
-
-// cargarEventos();
-
-// // LLamada a los diferentes eventos
-// function cargarEventos(){
-//     productos.click((e)=>{carro.comprarProducto(e)});
-//     carrito.click((e)=>{carro.eliminarProducto(e)});
-//     vaciarCarritoBtn.click( (e) => {carro.vaciarCarrito(e)});
-//     $(document).ready(carro.leerLocalStorage());
-//     procesarPedidoBtn.click( (e)=>{carro.procesarPedido(e)});
-
-
-
-//     //Event agregar al carrito
-//     cards.addEventListener('click', e => {
-//         addCarrito(e);
-//     })
-
-//     // Evento botones aumentar/disminuor cantidad de productos
-//     items.addEventListener('click', e => {
-//         btnProducts(e);
-//     })
-
-// }
-
-

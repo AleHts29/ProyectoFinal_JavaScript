@@ -1,17 +1,3 @@
-// class Carrito{
-
-//     // METODOS
-
-    
-
-
-
-
-
-// }
-
-
-
 //accedo al archivo .JSON
 const fetchData = async()=>{
     try {
@@ -96,6 +82,8 @@ const pintarCarrito = () =>{
 // Funcion Pintar footer - Pinta los valores totales de productos y precios
 const pintarFooter = () => {
     footer.innerHTML = '';
+    let promotions = 1;
+    let nPriceDecimal;
     if(Object.keys(carrito2).length === 0){
         footer.innerHTML = `
         <th scope="row" colspan="5"> Carrito vacio - Agregar compras</th>
@@ -105,8 +93,15 @@ const pintarFooter = () => {
 
     const nProducts = Object.values(carrito2).reduce((totalProducts, {amount}) => totalProducts + amount,0);
     let nPrice = Object.values(carrito2).reduce((totalProducts, {amount, price}) => totalProducts + amount*price,0);
+    
 
-    let nPriceDecimal = nPrice.toFixed(2);
+    if(nProducts > promotions){
+        nPriceDecimal = descuentos(nPrice);
+    }
+    else{
+        nPriceDecimal = nPrice.toFixed(2);
+    }
+    
     
     // Pintamos en el HTML
     templateFooter.querySelectorAll('td')[0].textContent = nProducts;
@@ -129,6 +124,14 @@ const pintarFooter = () => {
         e.preventDefault();
         location.href = "pages/formulario.html";
     })
+}
+
+// Decuentos del 25%
+const descuentos = e =>{
+    let nDescuento = 0.25;
+    let nPriceDescuento = e * nDescuento;
+
+    return (e - nPriceDescuento).toFixed(2);
 }
 
 // Funcion botones aumentar/disminuor cantidad de productos
