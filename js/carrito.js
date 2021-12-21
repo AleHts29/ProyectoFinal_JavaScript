@@ -11,7 +11,7 @@ const fetchData = async()=>{
 
 
 
-//  Funsion para pintar las cards en el html y se disminuye el reflow
+//  Funcion para pintar las cards en el html y se disminuye el reflow
 const htmlCards = data =>{
     // console.log(data)
     data.forEach(producto =>{
@@ -27,7 +27,7 @@ const htmlCards = data =>{
 }
 
 
-// Funsion agregar a carrito. Se captura el evento del boton comprar.
+// Funcion agregar a carrito. Se captura el evento del boton comprar.
 const addCarrito = e => {
     // console.log(e.target.classList.contains('btn-outline-dark')); //se obtiene un true
     if (e.target.classList.contains('btn-outline-dark')){
@@ -54,7 +54,7 @@ const setCarrito = objeto =>{
     pintarCarrito();
 }
 
-// funcion pintar carrito
+// Funcion pintar carrito
 const pintarCarrito = () =>{
     // console.log(carrito2)
     // Limpio el html
